@@ -12,6 +12,7 @@ namespace SalesDbLib.Models
         //Db sets go here
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderLine> OrderLines { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
